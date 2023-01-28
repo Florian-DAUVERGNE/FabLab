@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard - Admin</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/js/Global/banniere.js"></script>
+    <script src="../assets/js/Adherent/index.js"></script>
+</head>
+
+<body id="page-top">
+<div id="wrapper">
+    <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+        <div class="container-fluid d-flex flex-column p-0"><a
+                class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+            <div class="sidebar-brand-icon rotate-n-15"><img height="60px" width="60px"
+                                                             src="../assets/img/pictures/Fablab_logo-removebg-preview (3).png">
+            </div>
+            <div class="sidebar-brand-text mx-3"><span id="banniere_grade" ></span></div>
+        </a>
+            <ul class="navbar-nav text-light" id="accordionSidebar">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="../Global/profile.html"><i
+                        class="far fa-id-badge"></i><span>Profil</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+            <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top" id="banniere">
+            </nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <br>
+                    <h3 class="text-dark mb-0">Vos Statistiques</h3>
+                    <h2 id="Nombre_H">Temps passé au FabLab:</h2>
+                    <div class="col-lg-7 col-xl-8" style="width: 50%;">
+
+                        <div class="card shadow mb-4">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h6 class="text-primary fw-bold m-0">Nombre de passage par heures</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xl-8" style="width: 50%;">
+                        <div class="card shadow mb-4">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h6 class="text-primary fw-bold m-0">Vos cadenas les plus ouvert</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="myChart4"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/js/chart.min.js"></script>
+<script src="../assets/js/bs-init.js"></script>
+<script src="../assets/js/theme.js"></script>
+
+
+</body>
+</html>
